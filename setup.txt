@@ -66,7 +66,8 @@ python -m pip install -r requirements.txt
 
 # if you get an error READ IT. If it says you don't have access you need to use the '--user'
 # option.  See the command below.  You can add --user to any pip command.
-# python3 -m pip install --user -r requirements.txt
+# python3 -mp
+ip install --user -r requirements.txt
 
 # You should see several packages being downloaded and installed.
 # You can check to see if it worked by clicking on the main.py to the left and then clicking the run button (triangle)
