@@ -13,6 +13,13 @@
             {% endfor %}
         </p>
         <p>
+            {{ form.role.label }}<br>
+            {{ form.role() }}<br>
+            {% for error in form.role.errors % }
+            <span style="color: red;">[{{error}]</span>
+            % endfor %
+        </p>
+        <p>
             {{ form.lname.label }}<br>
             {{ form.lname(size=64) }}<br>
             {% for error in form.lname.errors %}
