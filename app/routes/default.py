@@ -78,6 +78,57 @@ def zouglou():
 @app.route('/Asian')
 def Asian():
     return render_template('Asian.html')
+@app.route('/Baila')
+def Baila():
+    return render_template('Baila.html')
+@app.route('/Bollywood')
+def Bollywood():
+    return render_template('Bollywood.html')
+@app.route('/Carnatic') 
+def Carnatic ():
+    return render_template('Carnatic.html') 
+@app.route('/ChineseFolk') 
+def ChineseFolk():
+    return render_template('Chinesefolk.html')
+@app.route('/ChineseTraditionalOpera') 
+def ChineseTradionalOpera():
+    return render_template('ChineseOpera.html')  
+@app.route('/Cpop') 
+def Cpop ():
+    return render_template('Cpop.html') 
+@app.route('/Dangdut') 
+def Dangdut ():
+    return render_template('Dangdut.html') 
+@app.route('/GagakuCourtMusic') 
+def GagakuCourtMusic ():
+    return render_template('Gagakucourt.html') 
+@app.route('/GoaTrance') 
+def GoaTrance ():
+    return render_template('Goatrance.html') 
+@app.route('/Hindustani') 
+def Hindustani ():
+    return render_template('Hindustani.html') 
+@app.route('/JapaneseFolk') 
+def JapaneseFolk ():
+    return render_template('Japanesefolk.html') 
+@app.route('/Jpop') 
+def Jpop ():
+    return render_template('Jpop.html') 
+@app.route('/Ktrot') 
+def Ktrot ():
+    return render_template('ktrot.html') 
+@app.route('/Punjabi') 
+def Punjabi ():
+    return render_template('Punjabi.html') 
+@app.route('/Rafi') 
+def Rafi ():
+    return render_template('Rafi.html') 
+@app.route('/Ragarock') 
+def Ragarock ():
+    return render_template('Ragarock.html') 
+@app.route('/Vpop') 
+def Vpop ():
+    return render_template('Vpop.html') 
 
 @app.route('/Caribbean')
 def Caribbean():
