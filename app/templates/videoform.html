@@ -1,0 +1,40 @@
+<!-- this is a generic form page.  Best way to make a new form page is to 
+copy this one and then edit it. -->
+
+{% extends "base.html" %}
+
+{% block body %}
+        <h1>Videeo Links</h1>
+
+        <!--List all errors in a group at the top-->
+        <p>
+            {{ form.title.label }} <br>
+            {{ form.title(size=64) }}
+            <!--List the errors for this field-->
+            {% for error in form.title.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.composer.label }} <br>
+            {{ form.composer(cols=64, rows=10) }}
+            <!--List the errors for this field-->
+            {% for error in form.composer.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.vidLink.label }} <br>
+            {{ form.vidLink(cols=64, rows=10) }}
+            <!--List the errors for this field-->
+            {% for error in form.vidLink.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{form.submit()}}
+        </p>
+            
+        </form>
+        
+{% endblock %}

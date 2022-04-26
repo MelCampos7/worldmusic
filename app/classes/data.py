@@ -7,7 +7,7 @@
 from app import app
 from flask import flash
 from flask_login import UserMixin
-from mongoengine import FileField, EmailField, StringField, ReferenceField, DateTimeField, CASCADE
+from mongoengine import FileField, EmailField, StringField, ReferenceField, DateTimeField, CASCADE, URLField
 from flask_mongoengine import Document
 from werkzeug.security import generate_password_hash, check_password_hash
 import datetime as dt
@@ -66,3 +66,13 @@ class Comment(Document):
     meta = {
         'ordering': ['-createdate']
     }
+class Video(Document):
+    author = ReferenceField('User',reverse_delete_rule=CASCADE)
+    title = StringField()
+    composer = StringField()
+    vidLink = URLField()
+    createdate = DateTimeField()
+    modifydate = DateTimeField()
+
+
+

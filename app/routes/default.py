@@ -78,9 +78,9 @@ def zouglou():
 @app.route('/Asian')
 def Asian():
     return render_template('Asian.html')
-@app.route('/Baila')
-def Baila():
-    return render_template('Baila.html')
+@app.route('/Balia')
+def Balia():
+    return render_template('Balia.html')
 @app.route('/Bollywood')
 def Bollywood():
     return render_template('Bollywood.html')
