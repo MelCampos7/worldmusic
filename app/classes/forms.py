@@ -70,6 +70,6 @@ class CommentForm(FlaskForm):
 
 class VideoForm(FlaskForm):
     title = TextAreaField('Song Title',validators=[DataRequired()])
-    composer = TextAreaField('Song Title',validators=[DataRequired()])
+    composer = TextAreaField('Composer',validators=[DataRequired()])
     vidLink = StringField('Video', validators=[URL()])
     submit = SubmitField('Post')

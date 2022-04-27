@@ -1,0 +1,22 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Here's Videos that people want to share!</h1>
+{% for video in videos %}
+
+<br>
+<a href="/video/delete/{{video.id}}">delete</a>
+<a href="/video/edit/{{video.id}}">edit</a> <br>
+{{video.author.username}} <br>
+<a href = "/video/{{video.id}}">{{video.title}}</a> <br> 
+{{video.composer}} <br>
+{{video.vidLink}} <br>
+{{moment(video.createdate).calendar()}} <br>
+
+<br>
+<br>
+
+{% endfor %}
+{% endblock %}

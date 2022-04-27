@@ -81,9 +81,7 @@ def Asian():
 @app.route('/Balia')
 def Balia():
     return render_template('Balia.html')
-@app.route('/Bollywood')
-def Bollywood():
-    return render_template('Bollywood.html')
+
 @app.route('/Carnatic') 
 def Carnatic ():
     return render_template('Carnatic.html') 

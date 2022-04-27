@@ -1,0 +1,14 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+{{video.author.username}} <br>
+{{video.title}} <br>
+{{video.composer}} <br>
+<a href="{{video.vidLink}}">Play Video</a> <br>
+
+{{moment(video.createdate).calendar()}} <br>
+
+{% endblock %}

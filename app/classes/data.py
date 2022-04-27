@@ -71,8 +71,7 @@ class Video(Document):
     title = StringField()
     composer = StringField()
     vidLink = URLField()
-    createdate = DateTimeField()
-    modifydate = DateTimeField()
+    createdate = DateTimeField(default=dt.datetime.utcnow)
 
 
 
