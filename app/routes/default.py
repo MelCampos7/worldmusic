@@ -132,6 +132,45 @@ def Vpop ():
 def Caribbean():
     return render_template('Caribbean.html')
 
+@app.route('/Calypso')
+def Calypso():
+    return render_template('Calypso.html')
+@app.route('/Dancehall')
+def Dancehall():
+    return render_template('Dancehall.html')
+@app.route('/Mambo')
+def Mambo():
+    return render_template('Mambo.html')
+@app.route('/Mento')
+def Mento():
+    return render_template('Mento.html')
+@app.route('/Merengue')
+def Merengue ():
+    return render_template('Merengue.html')
+@app.route('/Reggae')
+def Reggae():
+    return render_template('Reggae.html')
+@app.route('/Rocksteady')
+def Rocksteady():
+    return render_template('Rocksteady.html')
+@app.route('/Salsa')
+def Salsa():
+    return render_template('Salsa.html')
+@app.route('/Ska')
+def Ska():
+    return render_template('Ska.html')
+@app.route('/Soca')
+def Soca():
+    return render_template('Soca.html')
+@app.route('/Steel')
+def Steel():
+    return render_template('Steel.html')
+@app.route('/Zouk')
+def Zouk ():
+    return render_template('Zouk.html')
+
+
+
 @app.route('/European')
 def European():
     return render_template('European.html')
