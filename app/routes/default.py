@@ -144,18 +144,14 @@ def Mambo():
 @app.route('/Mento')
 def Mento():
     return render_template('Mento.html')
-@app.route('/Merengue')
-def Merengue ():
-    return render_template('Merengue.html')
+
 @app.route('/Reggae')
 def Reggae():
     return render_template('Reggae.html')
 @app.route('/Rocksteady')
 def Rocksteady():
     return render_template('Rocksteady.html')
-@app.route('/Salsa')
-def Salsa():
-    return render_template('Salsa.html')
+
 @app.route('/Ska')
 def Ska():
     return render_template('Ska.html')
@@ -174,11 +170,48 @@ def Zouk ():
 @app.route('/European')
 def European():
     return render_template('European.html')
+@app.route('/Acapella')
+def Acapella():
+  return render_template('Acapella.html')
+@app.route('/Celtic')
+def Celtic():
+  return render_template('Celtic.html')
+@app.route('/Drum')
+def Drum():
+  return render_template('Drum.html')
+@app.route('/Euro')
+def Euro():
+  return render_template('Euro.html')
+@app.route('/Flamenco')
+def Flamenco():
+  return render_template('Flamenco.html')
+@app.route('/Glitch')
+def Glitch():
+  return render_template('Glitch.html')
+@app.route('/Grime')
+def Grime():
+  return render_template('Grime.html')
+@app.route('/Opera')
+def Opera():
+  return render_template('Opera.html')
+@app.route('/Polka')
+def Polka():
+  return render_template('Polka.html')
+@app.route('/Trance')
+def Trance():
+  return render_template('Trance.html')
+
+
 
 @app.route('/Latin')
 def Latin():
     return render_template('Latin.html')
-
+@app.route('/Merengue')
+def Merengue ():
+    return render_template('Merengue.html')
+@app.route('/Salsa')
+def Salsa():
+    return render_template('Salsa.html')
 @app.route('/North')
 def North():
     return render_template('North.html')
