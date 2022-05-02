@@ -206,16 +206,120 @@ def Trance():
 @app.route('/Latin')
 def Latin():
     return render_template('Latin.html')
+@app.route('/Bachata')
+def Bachata():
+    return render_template('Bachata.html')
+@app.route('/Balada')
+def Balada():
+    return render_template('Balada.html')
+@app.route('/Bossa')
+def Bossa():
+    return render_template('Bossa.html')
+@app.route('/Compas')
+def Compas():
+    return render_template('Compas.html')
+@app.route('/Cumbia')
+def Cumbia():
+    return render_template('Cumbia.html')
+@app.route('/Mariachi')
+def Mariachi():
+    return render_template('Mariachi.html')
 @app.route('/Merengue')
 def Merengue ():
     return render_template('Merengue.html')
+@app.route('/Mesitzo')
+def Mesitzo():
+    return render_template('Mesitzo.html')
+@app.route('/Ranchera')
+def Ranchera():
+    return render_template('Ranchera.html')
+@app.route('/Reggaeton')
+def Reggaeton():
+    return render_template('Reggaeton.html')
 @app.route('/Salsa')
 def Salsa():
     return render_template('Salsa.html')
+@app.route('/Samba')
+def Samba():
+    return render_template('Samba.html')
+@app.route('/Tango')
+def Tango():
+    return render_template('Tango.html')
+@app.route('/Vallenato')
+def Vallenato():
+    return render_template('vallenato.html')
+
+
 @app.route('/North')
 def North():
     return render_template('North.html')
+@app.route('/AmericanFolk')
+def AmericanFol():
+    return render_template('Americanfolk.html')
+@app.route('/Bluegrass')
+def Bluegrass():
+    return render_template('Bluegrass.html')
+@app.route('/Blues')
+def Blues():
+    return render_template('Blues.html')
+@app.route('/CanadianFolk')
+def CanadianFolk():
+    return render_template('CanadianFolk.html')
+@app.route('/Industrial')
+def Industrial():
+    return render_template('Industrial.html')
+@app.route('/Swing')
+def Swing():
+    return render_template('Swing.html')
+@app.route('/Tejano')
+def Tejano():
+    return render_template('Tejano.html')
+@app.route('/Zydeco')
+def Zydeco():
+    return render_template('Zydeco.html')
 
 @app.route('/Top')
 def Top():
     return render_template('Top.html')
+@app.route('/Classical')
+def Classical():
+    return render_template('Classical.html')
+@app.route('/Country')
+def Country():
+    return render_template('Country.html')
+@app.route('/EDM')
+def EDM():
+    return render_template('EDM.html')
+@app.route('/Hiphop')
+def Hiphop():
+    return render_template('Hiphop.html')
+@app.route('/Indierock')
+def Indierock():
+    return render_template('Indierock.html')
+@app.route('/Jazz')
+def Jazz():
+    return render_template('Jazz.html')
+@app.route('/Kpop')
+def Kpop():
+    return render_template('kpop.html')
+@app.route('/Metal')
+def Metal():
+    return render_template('Metal.html')
+@app.route('/Oldies')
+def Oldies():
+    return render_template('Oldies.html')
+@app.route('/Pop')
+def Pop():
+    return render_template('Pop.html')
+@app.route('/Rap')
+def Rap():
+    return render_template('Rap.html')
+@app.route('/RB')
+def RB():
+    return render_template('RB.html')
+@app.route('/Rock')
+def Rock():
+    return render_template('Rock.html')
+@app.route('/Techno')
+def Techno():
+    return render_template('Techno.html')
