@@ -3,17 +3,22 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h1>Here's Videos that people want to share!</h1>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/de/01/61/de0161de81679a2b5851fabc33f1aed4.png);
+    }
+</style>
+<h1 style="color: aliceblue;">Here's Videos that people want to share!</h1>
 {% for video in videos %}
 
 <br>
 <a href="/video/delete/{{video.id}}">delete</a>
 <a href="/video/edit/{{video.id}}">edit</a> <br>
-{{video.author.username}} <br>
+<h5 style="color: aliceblue;">{{video.author.username}}</h5> <br>
 <a href = "/video/{{video.id}}">{{video.title}}</a> <br> 
-{{video.composer}} <br>
-{{video.vidLink}} <br>
-{{moment(video.createdate).calendar()}} <br>
+<h5 style="color: aliceblue;">{{video.composer}}</h5> <br>
+<h5 style="color: aliceblue;">{{video.vidLink}}</h5> <br>
+<h5 style="color: aliceblue;">{{moment(video.createdate).calendar()}}</h5> <br>
 
 <br>
 <br>

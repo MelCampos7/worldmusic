@@ -3,12 +3,16 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-{{video.author.username}} <br>
-{{video.title}} <br>
-{{video.composer}} <br>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/de/01/61/de0161de81679a2b5851fabc33f1aed4.png);
+    }
+</style>
+<p style="color: aliceblue;">{{video.author.username}}</p> <br>
+<p style="color: aliceblue;">{{video.title}}</p> <br>
+<p style="color: aliceblue;">{{video.composer}}</p> <br>
 <a href="{{video.vidLink}}">Play Video</a> <br>
 
-{{moment(video.createdate).calendar()}} <br>
+<p style="color: aliceblue;">{{moment(video.createdate).calendar()}}</p> <br>
 
 {% endblock %}

@@ -1,3 +1,4 @@
+import re
 from app import app
 from flask import render_template
 
@@ -37,26 +38,26 @@ def Hiplife():
     return render_template('Hiplife.html')
 @app.route('/Inkiranya')
 def Inkiranya():
-    return render_template('Inkiraya.html')
-@app.route('/Juju')
-def Juju():
+    return render_template('Inkiranya.html')
+@app.route('/juju')
+def juju():
     return render_template('juju.html')
 @app.route('/Majika')
 def Majika():
     return render_template('Majika.html')
-@app.route('/Mbalax')
-def Mbalax():
+@app.route('/mbalax')
+def mbalax():
     return render_template('mbalax.html')
-@app.route('/Ndombolo')
-def Ndombolo():
+@app.route('/ndombolo')
+def ndombolo():
     return render_template('Ndombolo.html')
-@app.route('/Palmwine')
-def Palmwine():
+@app.route('/palmwine')
+def palmwine():
     return render_template('palmwine.html')
-@app.route('/Rababah')
+@app.route('/rababah')
 def Rababah():
     return render_template('Rababah.html')
-@app.route('/Shaabi')
+@app.route('/shaabi')
 def Shaabi():
     return render_template('Shaabi.html')
 @app.route('/somalijazz')
@@ -88,9 +89,9 @@ def Carnatic ():
 @app.route('/ChineseFolk') 
 def ChineseFolk():
     return render_template('Chinesefolk.html')
-@app.route('/ChineseTraditionalOpera') 
-def ChineseTradionalOpera():
-    return render_template('ChineseOpera.html')  
+@app.route('/ChineseTraditionalOpera')
+def ChineseTraditionalOpera():
+    return render_template('ChineseOpera.html')
 @app.route('/Cpop') 
 def Cpop ():
     return render_template('Cpop.html') 
@@ -247,7 +248,7 @@ def Tango():
     return render_template('Tango.html')
 @app.route('/Vallenato')
 def Vallenato():
-    return render_template('vallenato.html')
+    return render_template('Vallenatto.html')
 
 
 @app.route('/North')

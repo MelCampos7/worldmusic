@@ -1,45 +1,50 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <h1>Register</h1>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/cb/47/96/cb479679965428ec22e87e97f810f75f.jpg);
+    }
+</style>
+    <h1 style="color: aliceblue;">Register</h1>
     <form action="" method="post">
         {{ form.hidden_tag() }}
-        <p>
+        <p style="color: aliceblue;">
             {{ form.username.label }}<br>
             {{ form.username(size=32) }}<br>
             {% for error in form.username.errors %}
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.email.label }}<br>
             {{ form.email(size=64) }}<br>
             {% for error in form.email.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.fname.label }}<br>
             {{ form.fname(size=64) }}<br>
             {% for error in form.fname.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.lname.label }}<br>
             {{ form.lname(size=64) }}<br>
             {% for error in form.lname.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.password.label }}<br>
             {{ form.password(size=32) }}<br>
             {% for error in form.password.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.password2.label }}<br>
             {{ form.password2(size=32) }}<br>
             {% for error in form.password2.errors %}

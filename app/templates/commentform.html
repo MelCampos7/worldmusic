@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block body %}
+<style>
+    body{
+        background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/10/23/57899/question-mark-16.jpg);
+    }
+</style>
         <!--List all errors in a group at the top-->
         {% for field in form.errors %}
             {% for error in form.errors[field] %}

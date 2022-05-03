@@ -4,7 +4,12 @@ copy this one and then edit it. -->
 {% extends "base.html" %}
 
 {% block body %}
-        <h1>Video Links</h1>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/de/01/61/de0161de81679a2b5851fabc33f1aed4.png);
+    }
+</style>
+        <h1 style="color: aliceblue;">Video Links</h1>
 
     {% for field in form.errors %}
         {% for error in form.errors[field] %}
@@ -18,7 +23,7 @@ copy this one and then edit it. -->
         <form method="post">
             {{ form.hidden_tag() }}
 
-        <p>
+        <p style="color: aliceblue;">
             {{ form.title.label }} <br>
             {{ form.title(size=64) }}
             <!--List the errors for this field-->
@@ -26,7 +31,7 @@ copy this one and then edit it. -->
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.composer.label }} <br>
             {{ form.composer(size=64) }}
             <!--List the errors for this field-->
@@ -34,7 +39,7 @@ copy this one and then edit it. -->
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>
+        <p style="color: aliceblue;">
             {{ form.vidLink.label }} <br>
             {{ form.vidLink() }}
             <!--List the errors for this field-->
