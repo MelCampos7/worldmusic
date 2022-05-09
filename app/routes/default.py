@@ -29,7 +29,7 @@ def Ethio():
     return render_template('Ethio.html')
 @app.route('/Gnawa')
 def Gnawa():
-    return render_template('Highlife.html')
+    return render_template('Gnawa.html')
 @app.route('/Highlife')
 def Highlife():
     return render_template('Highlife.html')
